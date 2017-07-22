@@ -1,0 +1,57 @@
+<?php print render($page['page_top']);?>
+    
+    
+<div id="overlay">
+    <img class="background" src="sites/all/themes/Assessment/assets/images/slideshow/slide-1.jpg"/>
+    <div class="text">
+        <div class="header">
+            <!--?php print render($page['header']);?-->
+            <div id="logo">
+                <?php if($logo):?>
+                <a href="<?php print $base_path;?>">
+                <img src="<?php print $logo;?>" alt="<?php print t('Home');?>"/></a>
+                <?php endif;?>
+            </div>
+            <div id="right-menu">
+                <ul>
+                    <li><a href="#">ABOUT OPEN CHARITY</a></li>
+                    <li><a href="#">THE BLOG</a></li>
+                    <li><a href="#"><button id="join-btn">JOIN US</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="infotext">
+            <?php print render($page['jumbotron']);?>
+        </div>
+    </div>
+</div>
+    
+<div id="nextEvent"> 
+    <?php print render($page['next_event']);?> 
+</div>
+    
+<div id="join"> 
+    <?php print render($page['join']);?>
+    <div class="clear"></div>
+</div>
+
+<div id="mission" onload="startTimer()"> 
+    <?php print render($page['mission']);?>
+</div>
+
+<div id="members"> 
+    <?php print render($page['members']);?> 
+    <div class="clear"></div>
+</div>
+
+<article id="blog"> 
+    <?php print render($page['blog']);?> 
+</article>
+
+<footer> 
+    <?php print render($page['social']);?>
+    <hr id="footerDivider">
+    <?php print render($page['footer']);?> 
+</footer>
+
+<?php print render($page['page_bottom']);?>

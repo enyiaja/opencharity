@@ -1,0 +1,703 @@
+@font-face{
+    font-family: MuseoSans 300;
+    src: url('../fonts/museo-sans-300-5958df3d444b2.otf');
+}
+@font-face{
+    font-family: Museo Sans 500;
+    src: url('../fonts/museo-sans-500-5958e05ba265c.otf');
+}
+@font-face{
+    font-family: Open Sans Semibold;
+    src: url('../fonts/open-sans/OpenSans-Semibold.ttf');
+}
+@font-face{
+    font-family: OpenSans;
+    src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+*{box-sizing: border-box;}
+html, body{margin: 0;padding: 0;height: 100%;}
+
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+
+
+#block-user-login{
+    margin: 0;
+    height: 100px;
+    background-color: #ccc;
+}
+#block-user-login h2{
+    display: none;
+}
+#block-user-login input, #block-user-login label, .form-item, .item-list, .item-list li{
+    display: inline-block;
+    float: left;
+}
+.form-item{
+    margin: 0 10px 10px 0;
+}
+.item-list{
+    clear: both;
+    float: right;
+}
+#block-user-login form{
+    float: right;
+}
+
+#overlay{
+    max-height: 100%;
+	min-height: 100%;
+	overflow-y: hidden;
+	position: relative;
+	background: rgba(0,9,12,0.6);
+}
+.background{
+    width: 100%;
+	position: relative;
+	min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+	height: auto;
+	display: block;
+	z-index: -1;
+	float: left;
+    position: center;
+}
+.text{
+    width: 100%;
+	z-index: 0;
+	position: absolute;
+}
+.header{
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    /*border: 1px solid yellow;*/
+}
+#right-menu{
+    /*border: 1px solid red;*/
+    float: right;
+    margin-right: 5%;
+    height: 100%;
+    text-align: center;
+}
+#right-menu li{
+    display: inline-block;
+    margin: auto;
+    margin-left: 20px;
+}
+#right-menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #777;
+}
+#join-btn{
+    cursor: pointer;
+    border-radius: 4px;
+    background: transparent;
+    font-family: sans-serif;
+    color: #50af50;
+    text-decoration: none;
+    padding: 10px 32px;
+    font-size: 18px;
+    border: 1px solid #50af50;
+}
+#join-btn:hover{
+    
+}
+#right-menu li a:hover{
+    color: #50af50;
+}
+#logo{
+    height: 100%;
+    width: 200px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+#logo img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.infotext{
+    text-align: center;
+    color: #fff;
+    /*font-family: sans-serif;*/
+    width: 60%;
+    margin-left: 20%;
+}
+.infotext h2{
+    font-family: OpenSans;
+    font-size: 3em;
+}
+.infotext p{
+    font-family: OpenSans;
+    font-size: 1.1em;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px 0 0 0;
+}
+
+#nextEvent{
+    background-color: #ccc;
+    height: 120px;
+    padding: 0 0 0 100px;
+}
+.title1{
+    color: #333;
+    font-family: OpenSans;
+    font-size: 1.3em;
+}
+.green{
+    color: #50af50;
+}
+#nextEvent p{
+    font-family: OpenSans;
+    font-size: 1em;
+    color: #444;
+}
+#nextEvent button{
+    margin-right: 100px;
+    margin-top: 15%;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #50af50;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 32px;
+    font-size: 14px;
+    border: none;
+    /*border: 1px solid #50af50;*/
+}
+.left{
+    height: 100%;
+    float: left;
+}
+.right{
+    height: 100%;
+    float: right;
+}
+
+#join{
+    
+    text-align: center;
+    background-color: #fff;
+}
+#join h2{
+    text-align: center;
+    color: #333;
+    font-family: OpenSans;
+    font-size: 1.5em;
+}
+.threeColumn{
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+}
+.oneOfThree{
+    width: 33%;
+    float: left;
+}
+.oneOfThree img{
+    max-width: 120px;
+    max-height: 100px;
+    height: 100px;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
+}
+.oneOfThree h3{
+    color: #333;
+    font-family: OpenSans;
+    text-align: center;
+    font-size: 1.5em;
+}
+.oneOfThree p{
+    font-family: OpenSans;
+    font-size: 1em;
+    color: #444;
+    margin: 30px 0 30px 0;
+}
+.oneOfThree button{
+    cursor: pointer;
+    border-radius: 4px;
+    background: transparent;
+    font-family: sans-serif;
+    color: #50af50;
+    text-decoration: none;
+    padding: 5px 22px;
+    font-size: 18px;
+    border: 1px solid #50af50;
+}
+.clear{
+    clear: both;
+}
+
+#mission{
+    /*border: 1px solid green;*/
+    max-width: 100%;
+    background-color: #ccc;
+    text-align: center;
+    margin-bottom: 0;
+}
+#mission h2{
+    padding: 20px;
+    color: #333;
+    font-family: OpenSans;
+    font-size: 2.3em;
+}
+#mission1 p{
+    color: #444;
+    font-family: OpenSans;
+    font-size: 1.2em;
+}
+#mission1 .bold{
+    color: #444;
+    font-family: OpenSans;
+    font-size: 1.3em;
+}
+#shape{
+    width: 30%;
+    background-size: cover;
+    /*border: 1px solid red;*/
+    max-height: 100%;
+	min-height: 100%;
+	overflow-y: hidden;
+	position: relative;
+    float: left;
+    margin: 30px 0.5%;
+}
+.shapeImage{
+    width: 100%;
+	position: relative;
+	min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+	height: auto;
+	display: block;
+	z-index: 2;
+	float: left;
+    position: center;
+}
+.shapeText{
+    z-index: 3;
+    position: absolute;
+    padding: 25% 0 10px 0;
+    width: 90%;
+    margin-left: 5%;
+}
+.shapeText h3{
+    color: #50afaf;
+    font-family: OpenSans;
+    font-size: 18px;
+}
+.shapeText p{
+    color: #444;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+#mission2 div:first-child{
+    margin-left: 3.5%;
+}
+.missionDivider{
+    width: 80%;
+    margin-left: 10%;
+    color: #444;
+    margin-bottom: 0;
+}
+
+#members{
+    border: 1px solid #ccc;
+    margin-top: 0;
+    max-width: 100%;
+    background-color: #ccc;
+    text-align: center;
+}
+#members h2{
+    padding: 20px 20px 0px 20px;
+    color: #333;
+    font-family: OpenSans;
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
+.fiveColumn{
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+.oneOfFive{
+    /*border: 1px solid red;*/
+    width: 12%;
+    float: left;
+    overflow: hidden;
+    margin: 0 2.5%;
+}
+.oneOfFive img{
+    max-width: 100%;
+    min-width: 100%;
+}
+.fiveColumn div:first-child{
+    margin-left: 10%;
+}
+
+
+#blog h2{
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    color: #333;
+    font-family: OpenSans;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#blogbody{
+    width: 100%;
+}
+#prev{
+    height: 100%;
+    /*border: 1px solid red;*/
+    width: 10%;
+    float: left;
+    cursor: pointer;
+}
+#prev:hover{
+    background: linear-gradient(right, #ccc, #fff);
+    padding-right: 10px;
+}
+#prev img{
+    margin-top: 40%;
+    float: right;
+}
+#next{
+    height: 100%;
+    /*border: 1px solid red;*/
+    width: 10%;
+    float: left;
+    cursor: pointer;
+}
+#next:hover{
+    padding-left: 10px;
+}
+#next img{
+    margin-top: 40%;
+    float: left;
+}
+.fourColumn{
+    /*border: 1px solid blue;*/
+    width: 80%;
+    float: left;
+}
+.oneOfFour{
+    float: left;
+    width: 22%;
+    margin-left: 4%;
+}
+.fourColumn div:first-child{
+    margin-left: 0;
+}
+.oneOfFour p{
+    color: #444;
+    font-family: OpenSans;
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.oneOfFour .blue{
+    color: #50afaf;
+    font-weight: bolder;
+}
+.oneOfFour .date{
+    margin-top: 30px;
+}
+
+footer{
+    background-color: #131f2f;
+}
+#footerDivider{
+    width: 80%;
+    margin-left: 10%;
+}
+#socialContainer{
+    width: 100%;
+    text-align: center;
+}
+#socialContainer li{
+    display: inline-block;
+    margin: auto;
+    margin-left: 20px;
+}
+
+#footerContainer{
+    width: 100%;
+    text-align: center;
+}
+#footerContainer p{
+    font-family: OpenSans;
+    color: #ccc;
+    padding-bottom: 20px;
+} 
+#footerContainer a{
+    text-decoration: none;
+    font-family: OpenSans;
+    color: #50afaf;
+    
+}
+
+/*****************/
+/*---------------*/
+/*Responsive Code*/
+/*---------------*/
+/*****************/
+
+@media only screen and (max-width: 1195px){
+    .infotext{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1064px){
+    .shapeText h3{
+        font-size: 18px;
+    }
+    .shapeText p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 910px){
+    .header{
+        text-align: center;
+        height: 120px;
+    }
+    .overlay{
+        height: 600px;
+    }
+    .background{
+        height: 600px;
+    }
+    #logo{
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    #right-menu{
+        margin-right: 0;
+        height: 70px;
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+    #right-menu li:first-child{
+        margin-left: 0;
+    }
+    .infotext h2{
+        font-size: 28px;
+    }
+    #nextEvent{
+        padding: 0 0 0 50px;
+    }
+    #nextEvent button{
+        margin-right: 50px;
+    }
+    .shapeText h3{
+        font-size: 16px;
+    }
+    .shapeText p{
+        font-size: 12px;
+    }
+    #member5{
+        display: none;
+    }
+    .oneOfFive{
+        width: 20%;
+        margin-left: 1.5%;
+    }
+    .fiveColumn div:first-child{
+        margin-left: 5.5%;
+    }
+}
+
+@media only screen and (max-width: 870px){
+    .background{
+        min-height: 100%;
+        /*min-width: 0;*/
+        height: 100%;
+        width: auto;
+        position: absolute;
+        
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .infotext h2{
+        font-size: 24px;
+    }
+    .infotext p{
+        font-size: 16px;
+    }
+    .infotext{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    #right-menu{
+        font-size: 10px;
+    }
+    #right-menu ul{
+        width: 100%;
+    }
+    #join-btn{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    #nextEvent{
+        padding: 0 0 0 20px;
+    }
+    #nextEvent .left{
+        width: 70%;
+    }
+    #nextEvent h2, p{
+        font-size: 16px;
+    }
+    #nextEvent button{
+        margin-right: 20px;
+        margin-top: 15%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    #mission1 p{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #shape{
+        width: 80%;
+        margin-left: 10%;
+        clear: both;
+        float: left;
+    }
+    #mission2 div:first-child{
+        margin-left: 10%;
+    }
+    .shapeText h3{
+        font-size: 24px;
+    }
+    .shapeText p{
+        font-size: 18px;
+    }
+    .threeColumn{
+        width: 100%;
+        margin-left: 0;
+    }
+    .oneOfThree{
+        width: 33%;
+        float: left;
+    }
+    .oneOfThree img{
+        /*max-width: 120px;
+        max-height: 100px;*/
+        height: 100px;
+        padding: 5px 0 5px 0;
+        margin: 10px 0 10px 0;
+    }
+    .oneOfThree button{
+        padding: 5px 5px;
+        font-size: 16px;
+    }
+    .oneOfThree h3{
+        font-size: 16px;
+        height: 30px;
+    }
+    .oneOfThree p{
+        font-size: 14px;
+    }
+    .oneOfFive{
+        width: 30%;
+        margin: 0 1.25% 0 1.25%;
+    }
+    .fiveColumn div:first-child{
+        margin-left: 2.5%;
+    }
+    #member4{
+        display: none;
+    }
+    #blog{
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    #right-menu li a{
+        font-size: 14px;
+    }
+    #join-btn{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    #right-menu{
+        height: 50px;
+    }
+    .header{
+        height: 100px;
+    }
+    #nextEvent h2, p{
+        font-size: 14px;
+    }
+    #nextEvent button{
+        margin-right: 10px;
+        margin-top: 35%;
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    .oneOfThree{
+        clear: both;
+        float: left;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .shapeText h3{
+        font-size:  16px;
+    }
+    .shapeText p{
+        font-size:  14px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .right button{
+        margin: 0 0 0 40%;
+    }
+    #nextEvent{
+        padding: 0;
+    }
+    #nextEvent h2, p{
+        /*width: 100%;*/
+        font-size: 16px;
+    }
+    .left{
+        border: 1px solid red;
+        width: 100%;
+        float: none;
+    }
+    .right{
+        border: 1px solid blue;
+        width: 100%;
+        height: 40px;
+        float: left;
+        clear: both;
+    }
+}
+/*End of Responsive Code*/

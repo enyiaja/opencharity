@@ -1,0 +1,23 @@
+name = Assessment
+description = Technical Assessment Task for Open Charity by Aja Enyi Victor
+core = 7.x
+
+;CSS
+stylesheets[all][]  =   assets/css/style.css
+
+;JavaScript
+scripts[]      =   assets/js/assessment.js
+
+regions[page_top]   =   Page Top
+regions[page_bottom]=   Page Bottom
+regions[content]    =   Content
+regions[header]     =   Page Header
+regions[login]      =   Login
+regions[jumbotron]  =   Jumbotron
+regions[next_event] =   Next Event
+regions[join]       =   Join
+regions[mission]    =   Mission
+regions[members]    =   Members
+regions[blog]       =   Blog
+regions[social]     =   Social
+regions[footer]     =   Footer
